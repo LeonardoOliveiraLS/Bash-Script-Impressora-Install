@@ -81,7 +81,7 @@ else echo
 fi
 
 
-
+a
 
 AvisoConclusaoDescompactacao
 echo -n "Pressione qualquer tecla para sair..."
