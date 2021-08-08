@@ -72,12 +72,13 @@ menu ()
 
 
 
-
+# Variaveis -------------------------------------------------------------
 Modelo = "HLL6402DW"
 Pacote_nome="linux-brprinter-installer-2.2.2-2.gz"
 Pacote="linux-brprinter-installer-2.2.2-2"
 Pacote_link="https://download.brother.com/welcome/dlf006893/linux-brprinter-installer-2.2.2-2.gz"
-#-------------------------------------------------------------------------
+
+# Funções -----------------------------------------------------------------
 VerificaDriverInstalado(){
 
 pacote=$(dpkg -l | grep -i "brother" ) 
@@ -121,7 +122,7 @@ AvisoConclusaoDescompactacao(){
 }
 
 
-#-------------------------------------------------------------------------
+#Logica -------------------------------------------------------------
 
 
 
