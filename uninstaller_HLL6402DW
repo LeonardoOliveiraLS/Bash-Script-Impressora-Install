@@ -24,9 +24,9 @@ if ! [ -f /etc/init.d/lprng ];then
  ln -s /bin/true  /etc/init.d/lprng
 fi
 dpkg  -x hll6402dwcupswrapper-3.5.1-1.i386.deb /
-dpkg  -P    hll6402dwcupswrapper
+dpkg  -P    hll6402dwcupswrapper:i386
 dpkg  -x hll6402dwlpr-3.5.1-1.i386.deb /
-dpkg  -P    hll6402dwlpr
+dpkg  -P    hll6402dwlpr:i386
 if [ "$DUMMYCUPS" = 1 ];then
   lsc=$(ls -al /etc/init.d/cups  2> /dev/null| grep ^l)
   if [ "$lsc" != "" ];then
